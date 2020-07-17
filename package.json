@@ -1,0 +1,34 @@
+{
+  "name": "swing",
+  "version": "1.0.0",
+  "description": "Styled-components superset animations library",
+  "main": "index.ts",
+  "repository": "git@github.com:Markcial/swing.git",
+  "author": "Marc Garcia Sastre <markcial@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-info": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@types/jest": "^26.0.4",
+    "@types/styled-components": "^5.1.1",
+    "babel-loader": "^8.1.0",
+    "jest": "^26.1.0",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "ts-jest": "^26.1.2",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
