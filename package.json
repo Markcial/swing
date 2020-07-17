@@ -1,11 +1,12 @@
 {
-  "name": "swing",
+  "name": "@markcial/swing",
   "version": "1.0.0",
   "description": "Styled-components superset animations library",
   "main": "index.ts",
   "repository": "git@github.com:Markcial/swing.git",
   "author": "Marc Garcia Sastre <markcial@gmail.com>",
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -31,6 +32,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "tsc"
   }
 }
