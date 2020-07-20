@@ -88,3 +88,5 @@ ReactDOM.render(
   document.querySelector("#app")
 );
 ```
+
+<iframe width="500px" height="200px" style="border: none;" src="http://localhost:1234/fade/index.html"/>

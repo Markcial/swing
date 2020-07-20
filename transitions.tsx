@@ -19,12 +19,19 @@ interface TransitionParams {
   timingFn: TimingFn;
   delay: number; // in ms
 }
-const defaultTransitionParams: TransitionParams = {
-  duration: 700,
-  timingFn: TimingFn.Linear,
-  delay: 0,
-}
-const transition = ({ duration, timingFn, delay} = defaultTransitionParams) => ({ transition: `all ${duration}ms ${timingFn} ${delay}ms` });
+export let duration: number = 700;
+export let timingFn: TimingFn = TimingFn.Linear;
+export let delay: number = 0;
+const defaultTransitionParams: () => TransitionParams = () => ({ duration, timingFn, delay });
+export const setDuration = (d: number) => duration = d;
+export const setTimingFn = (tf: TimingFn) => timingFn = tf;
+export const setDelay = (d: number) => delay = d;
+const transition = ({ duration, timingFn, delay} = defaultTransitionParams()) => {
+  console.log(duration, timingFn, delay);
+  return {
+    transition: `all ${duration}ms ${timingFn} ${delay}ms`,
+  }
+};
 interface AnimationParams {
   from?: number | string;
   to?: number | string;
